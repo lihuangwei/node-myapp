@@ -4,6 +4,9 @@ let bcrypt = require('bcryptjs');
 let func = require('../sql/func');
 
 function formatData(rows) {
+  if(!rows) {
+    return rows
+  }
   return rows.map(row => {
     let date = moment(row.create_time).format('YYYY-MM-DD');
     let obj = {};
@@ -23,6 +26,7 @@ function formatData(rows) {
 
     return Object.assign({}, row, {create_time: date}, obj);
   });
+
 }
 
 module.exports = {
