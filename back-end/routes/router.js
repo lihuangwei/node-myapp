@@ -1,12 +1,11 @@
 let express = require('express');
 let router = express.Router();
-let goods = require('../controls/goods');
 let user=require('../controls/user')
 
 let path = '/api';
 
-//示例，访问路径http://localhost:9999/api/goods-list
-router.get(path+'/goods/list', goods.getGoodsList);
+//示例，访问路径http://localhost:9999/api/user/list
+
 
 // user
 router.get(path+'/user/list', user.fetchAll);
