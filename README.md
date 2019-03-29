@@ -5,7 +5,4 @@
 ## Build Setup
 
 ``` bash
-# install dependencies
-npm install
-
 # Node.js and MongoDB
