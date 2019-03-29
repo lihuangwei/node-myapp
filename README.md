@@ -5,4 +5,4 @@
 ## Build Setup
 
 ``` bash
-# Node.js and MongoDB
+# Node.js and MySql
